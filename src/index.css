@@ -1,0 +1,178 @@
+/* Resetando o CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/* Estilo do Menu */
+.navbar {
+  background-color: #000000;
+  padding: 8px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links li {
+  margin: 0 50px;
+}
+
+.nav-links a {
+  color: rgb(93, 231, 88);
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 5px 10px; /* Define o espaçamento desde o início */
+  border-radius: 5px; /* Garante cantos arredondados desde o início */
+  background-color: transparent; /* Fundo inicial transparente */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Suaviza as transições */
+}
+
+.nav-links a:hover {
+  color: #ffffff; /* Muda a cor do texto para branco */
+  background-color: #626462; /* Aplica o fundo cinza escuro no hover */
+}
+
+
+
+.carrinho-tabela {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  background-color: #f4f4f4; /* Cor de fundo clara para a tabela */
+}
+
+.carrinho-tabela th,
+.carrinho-tabela td {
+  padding: 20px; /* Reduzido o padding para uma aparência mais compacta */
+  border: 1px solid #000000; /* Cor mais suave para as bordas */
+  text-align: center;
+}
+
+.carrinho-tabela th {
+  background-color: #8dd196; /* Cor do cabeçalho */
+  color: rgb(0, 0, 0); /* Cor do texto do cabeçalho */
+}
+
+.carrinho-tabela td {
+  background-color: #d7dbd9; /* Cor suave para as células */
+}
+
+.carrinho-tabela td button {
+  background-color: #ffffff; /* Cor de fundo do botão */
+  color: #000000; /* Cor do texto do botão */
+  border: 1px solid #ccc; /* Bordas suaves */
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.carrinho-tabela td button:hover {
+  background-color: #f72525; /* Cor do botão ao passar o mouse */
+  color: #ffffff; /* Cor do texto do botão ao passar o mouse */
+}
+
+.Infos-Fora-Da-Tabela {
+  text-align: center;
+  margin-top: 20px; /* Adiciona um espaçamento de 20px entre o menu e o título */
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #000000;
+  font-family:'Times New Roman', Times, serif;
+  text-decoration:underline;
+}
+
+/* Estilo geral do container de produtos */
+.produto-container { 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;  /* Espaço entre os itens */
+  margin: 20px 0;
+}
+
+/* Estilo da Tabela dos Produtos */
+.produto-tabela {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombrinha para destacar a tabela */
+}
+
+.produto-tabela th, .produto-tabela td {
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  border: 2px solid #000000; /* Limite suave nas células */
+}
+
+.produto-info {
+  color: #000000;
+  background-color: #8dd196;
+  text-align: left;
+  font-size: 16px; /* Aumenta o tamanho da fonte dos produtos */
+  font-weight: bold; /* Deixa o nome do produto mais destacado */
+}
+
+.produto-botao {
+  text-align: center;
+}
+
+/* Estilo do botão */
+.Botoes-Dos-Produtos {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 6px 12px; /* Tamanho do botão mais confortável */
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.Botoes-Dos-Produtos:hover {
+  background-color: #00f85f; /* Cor de destaque ao passar o mouse */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .produto-tabela {
+    width: 100%;
+  }
+
+  .produto-info {
+    font-size: 14px;
+  }
+
+  .Botoes-Dos-Produtos {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+
+.titulo {
+  color: #8dd196; /* Verde escuro que combina com o fundo mais claro */
+  font-size: 3rem; /* Tamanho de fonte maior para destacar */
+  padding: 20px; /* Espaço interno para dar destaque ao título */
+  text-align: center; /* Centralizar o título */
+  font-weight: bold; /* Deixar o texto mais "gordinho" */
+  margin-top: 40px; /* Espaço entre o menu e o título */
+  text-shadow: 1px 1px 2px #000000;
+  margin-bottom: 20px; /* Espaço entre o título e o conteúdo */
+}
+
+.texto-projeto {
+  color: #020202; /* Cinza escuro para o texto */
+  background-color: #ffffff;
+  font-size: 1.2rem; /* Tamanho de fonte confortável para leitura */
+  font-weight: 600; /* Texto mais "gordinho" */
+  line-height: 1.6; /* Espaçamento entre as linhas para melhor legibilidade */
+  padding: 15px;
+  margin-top: 20px; /* Espaço entre o título e o texto */
+  text-align: center; /* Centralizar o texto */
+}
